@@ -9,5 +9,6 @@ namespace GameProject
         void Add(Player player);
         void Delete(Player player);
         void Update(Player player);
+        void BilmemNe(Player player);
     }
 }

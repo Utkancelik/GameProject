@@ -5,6 +5,7 @@ using System.Text;
 namespace GameProject
 {
     class GameSellManager : GameService
+
     {
         public void Sell(Games game, Player player)
         {
@@ -15,6 +16,12 @@ namespace GameProject
         {
             Console.WriteLine("{0} Oyunu {1} nick'ine sahip kullanıcıya yüzde{3} indirim uygulanarak" +
                               "başarıyla satılmıştır.", game.name, player.nickname,campaign.discountRate);
+        }
+
+        public void SellWithPromotion(Games game, Player player, Promotion promotion)
+        {
+            Console.WriteLine("{0} Oyunu {1} nick'ine sahip kullanıcıya {3}adlı promosyon ile" +
+                              "başarıyla satılmıştır.", game.name, player.nickname, promotion.Adı);
         }
     }
 }
